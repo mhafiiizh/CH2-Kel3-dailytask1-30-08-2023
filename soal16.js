@@ -4,10 +4,15 @@
 // Petunjuk
 // Cukup lakukan operasi aritmatika biasa.
 
-function solution(x,y) {
-    // tulis jawabanmu disini
-
+function solution(x, y) {
+  // tulis jawabanmu disini
+  let afterAdminFee = x + 0.5;
+  let saldoInBank = y;
+  if (x % 5 === 0 && afterAdminFee <= y) {
+    saldoInBank = y - afterAdminFee;
+  }
+  return saldoInBank;
 }
 
-console.log(solution(30,20)) // expected output 89.5
-console.log(solution(42,100)) // expected output 100
+console.log(solution(30, 120)); // expected output 89.5
+console.log(solution(42, 100)); // expected output 100

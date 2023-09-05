@@ -4,7 +4,7 @@
 // Ada sebuah mantra yang mengeluarkan mantra Fizz Buzz dengan rule:
 
 // Mantra “Fizz” akan keluar dengan nilai modulo 3
-// Mantra “Buzz” akan keluar dengan nilai modulo 5 
+// Mantra “Buzz” akan keluar dengan nilai modulo 5
 // Mantra akan “Fizz Buzz” akan keluar dengan nilai modulo 3 dan 5
 
 // Bisa diskusi dengan teman kelompokmu ya!
@@ -28,3 +28,20 @@
 // FizzBuzz
 // dan seterus nya sampai dengan 100
 
+function spellFizzBuzz() {
+  let printSpell = "";
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      printSpell = "Fizz Buzz";
+    } else if (i % 3 === 0) {
+      printSpell = "Fizz";
+    } else if (i % 5 === 0) {
+      printSpell = "Buzz";
+    } else {
+      printSpell = i;
+    }
+    console.log(printSpell);
+  }
+}
+
+spellFizzBuzz();
